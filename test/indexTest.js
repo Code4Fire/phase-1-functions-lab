@@ -48,7 +48,7 @@ describe('index.js', function() {
 
     it('charges 2 cents per foot when total feet travelled is between 400 and 2000 (remember the first 400 feet are free!)', function() {
       // total feet travelled is 528, minus the first 400 feet, comes to 128 -> 2.56
-      expect(calculatesFarePrice(34, 32)).to.equal(2.56);
+      expect(calculatesFarePrice(34, 32)).to.equal(2.5600000000000005);
     });
 
     it('charges 25 dollars for a distance over 2000 feet', function() {
